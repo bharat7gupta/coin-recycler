@@ -1,0 +1,54 @@
+.exchange {
+	background-image: url('../../images/about-2.svg');
+	min-height: 100vh;
+}
+
+.green-box {
+	border-radius: 30px;
+	background-color: #2fae8f;
+	padding: 35px;
+	text-align: left;
+
+	.help-icon {
+		color: inherit;
+		position: relative;
+	}
+
+	.text-wrap {
+		word-break: break-all;
+		white-space: normal;
+	}
+
+	input,
+	input:focus {
+		background-color: transparent;
+		border: none;
+		text-align: center;
+		box-shadow: none;
+		font-family: Liber Grotesque;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	button {
+		background-color: #2fae8f;
+		border-color: #111113;
+		border-radius: 25px;
+		padding-right: 40px;
+		padding-left: 40px;
+		float: right;
+		position: relative;
+		right: 0px;
+		top: 15px;
+	}
+
+	.copy-icon {
+		position: relative;
+		margin-left: 10px;
+		bottom: 5px;
+	}
+}
+
+.address-scan-icon {
+	position: relative;
+}

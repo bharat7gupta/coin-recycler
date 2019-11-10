@@ -1,0 +1,46 @@
+
+.dropdown {
+	position: relative;
+	height: 50%;
+	font-family: Liber Grotesque;
+	cursor: pointer;
+}
+
+.dropdown select {
+	text-align: right;
+	border: none;
+	background-color: inherit;
+	color: #a4a4a5;
+	font-weight: bold;
+	-webkit-appearance: button;
+	appearance: button;
+	outline: none;
+	font-size: 20px;
+	font-weight: bold;
+	padding-right: 20px;
+    margin-right: -12px;
+}
+
+.dropdown select:focus {
+	outline: none;
+}
+
+.dropdown .caret {
+	color: #37d6ae;
+	font-size: 20px;
+	pointer-events: none;
+	position: absolute;
+	top: 6px;
+	left: 90%;
+	pointer-events: none;
+}
+
+.dropdown select option:focus {
+	outline: none;
+}
+
+.dropdown select option {
+	padding: 30px;
+	color: #37d6ae;
+	margin-top: 10px;
+}

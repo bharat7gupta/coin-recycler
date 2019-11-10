@@ -1,0 +1,18 @@
+[
+	{
+		"id": "BITFINEX",
+		"name": "BitFinex",
+		"logo": "bitfinex.svg",
+		"lastUpdatedText": "30 min",
+		"btnAmount": "0.08254177",
+		"btnPrice": "0.08254177"
+	},
+	{
+		"id": "SHAPESHIFT",
+		"name": "ShapeShift",
+		"logo": "shapeshift.svg",
+		"lastUpdatedText": "45 min",
+		"btnAmount": "0.09154177",
+		"btnPrice": "0.09154177"
+	}	
+]

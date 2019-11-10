@@ -1,0 +1,44 @@
+.track-order {
+	background-image: url('../../images/about-2.svg');
+	min-height: 100vh;
+}
+
+.track-order-wrapper {
+	max-width: 670px;
+}
+
+.rounded-bg-grey,
+.rounded-bg-grey:focus {
+  border-radius: 13px;
+  background-color: #979797;
+  border: none;
+}
+
+.input-group-text,
+.input-group-text:focus {
+  background-color: #37d6ae;
+  border-radius: 13px;
+  position: relative;
+  left: -20px;
+  border: none;
+  font-size: 16px;
+  padding: 15px 40px;
+  color: #111113;
+  z-index: 5;
+}
+
+.track-order-input,
+.track-order-input:focus {
+  height: 54px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 13px;
+  box-shadow: none;
+  z-index: inherit;
+}
+
+.flex-center {
+  display: flex;
+  min-height: 90vh;
+  margin: auto;
+}

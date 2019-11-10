@@ -1,0 +1,118 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="448"
+	height="67"
+	viewBox="0 0 448 67"
+	id="logo-default"
+>
+	<g id="Group_8" data-name="Group 8" transform="translate(-235 -299)">
+		<g id="Group_7" data-name="Group 7">
+		<text
+			id="CoinRecycler"
+			transform="translate(370 356)"
+			fill="#fff"
+			font-size="40"
+			font-family="HeliosRounded, Helios Rounded"
+			letter-spacing="0.02em"
+		>
+			<tspan x="0" y="0">Coin</tspan>
+			<tspan y="0" fill="#37d6ae">Recycler</tspan>
+		</text>
+		<g
+			id="Ellipse_4"
+			data-name="Ellipse 4"
+			transform="translate(318.8 313.659)"
+			fill="#fff"
+			stroke="#37d6ae"
+			stroke-width="6"
+		>
+			<ellipse
+			cx="12.469"
+			cy="12.469"
+			rx="12.469"
+			ry="12.469"
+			stroke="none"
+			/>
+			<ellipse
+			cx="12.469"
+			cy="12.469"
+			rx="9.469"
+			ry="9.469"
+			fill="none"
+			/>
+		</g>
+		<path
+			id="Path_6"
+			data-name="Path 6"
+			d="M-283.5-244.7h-35.9l2.494,32.536c.232,3.364,2.262,5.626,5.626,5.626h19.661c3.364,0,5.336-2.262,5.626-5.626Z"
+			transform="translate(632.4 571.538)"
+			fill="#37d6ae"
+		/>
+		<path
+			id="Path_7"
+			data-name="Path 7"
+			d="M-284.882-271.3l-28.128-7.54c-4.35-1.16-5.51,3.132-6.09,5.336l36.828,9.859C-281.692-265.792-280.532-270.142-284.882-271.3Z"
+			transform="translate(633.84 578.037)"
+			fill="#37d6ae"
+		/>
+		<circle
+			id="Ellipse_5"
+			data-name="Ellipse 5"
+			cx="1"
+			cy="1"
+			r="1"
+			transform="translate(334 302)"
+			fill="#37d6ae"
+		/>
+		<text
+			id="CoinRecycler-2"
+			data-name="CoinRecycler"
+			transform="translate(370 356)"
+			fill="#fff"
+			font-size="40"
+			font-family="HeliosRounded, Helios Rounded"
+			letter-spacing="0.02em"
+		>
+			<tspan x="0" y="0">Coin</tspan>
+			<tspan y="0" fill="#37d6ae">Recycler</tspan>
+		</text>
+		<g
+			id="Ellipse_6"
+			data-name="Ellipse 6"
+			transform="translate(318.8 313.659)"
+			fill="#fff"
+			stroke="#37d6ae"
+			stroke-width="6"
+		>
+			<ellipse
+			cx="12.469"
+			cy="12.469"
+			rx="12.469"
+			ry="12.469"
+			stroke="none"
+			/>
+			<ellipse
+			cx="12.469"
+			cy="12.469"
+			rx="9.469"
+			ry="9.469"
+			fill="none"
+			/>
+		</g>
+		<path
+			id="Path_8"
+			data-name="Path 8"
+			d="M-283.5-244.7h-35.9l2.494,32.536c.232,3.364,2.262,5.626,5.626,5.626h19.661c3.364,0,5.336-2.262,5.626-5.626Z"
+			transform="translate(632.4 571.538)"
+			fill="#37d6ae"
+		/>
+		<path
+			id="Path_9"
+			data-name="Path 9"
+			d="M-284.882-271.3l-28.128-7.54c-4.35-1.16-5.51,3.132-6.09,5.336l36.828,9.859C-281.692-265.792-280.532-270.142-284.882-271.3Z"
+			transform="translate(633.84 578.037)"
+			fill="#37d6ae"
+		/>
+		</g>
+	</g>
+</svg>

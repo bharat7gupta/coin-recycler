@@ -1,0 +1,23 @@
+.top-nav a,
+.top-nav p {
+  text-decoration: none;
+  color: inherit;
+  font-size: 10px;
+  padding: 0 9px;
+  font-family: Liber Grotesque;
+}
+.top-nav p {
+  display: inline;
+  margin: 0;
+}
+
+.languages {
+  background-color: inherit !important;
+  font-size: 10px !important;
+}
+
+.caret {
+  top: 2px !important;
+  font-size: 10px !important;
+  color: white !important;
+}

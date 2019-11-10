@@ -1,0 +1,49 @@
+.exchanges {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	right: 0;
+	bottom: 0;
+	transition: 0.4s;
+	overflow: auto;
+}
+
+.slide-in {
+	left: 50%;
+}
+
+.close {
+	cursor: pointer;
+	color: black;
+}
+
+.minh-100vh {
+	min-height: 100vh;
+}
+
+.bg-green {
+	background-color: #37d6ae;
+}
+
+.coin-exchange {
+	cursor: pointer;
+}
+
+.price-box-row-1 {
+	background-color: #334243;
+	padding: 15px;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+}
+
+.price-box-row-2 {
+	background-color: #333a3d;
+	padding: 15px;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+}
+
+.p-color {
+	color: #37d6ae;
+	padding-left: 4px;
+}

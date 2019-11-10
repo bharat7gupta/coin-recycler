@@ -11,3 +11,112 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 0 5vw;
+}
+
+.center-all {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+.font-22 {
+  font-size: 22px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-10 {
+  font-size: 10px;
+}
+.font-8 {
+  font-size: 8px;
+}
+
+p {
+  font-family: Liber Grotesque;
+  margin-block-start: 0;
+	margin-block-end: 0;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.f-helios {
+  font-family: Helios Rounded !important;
+}
+.f-liber {
+  font-family: Liber Grotesque !important;
+}
+.f-avenir {
+  font-family: Avenir Next;
+}
+
+.p-color {
+	color: #37d6ae;
+}
+.d-color {
+	color: #212227;
+}
+
+.maxw-600 {
+	max-width: 600px;
+}
+
+@media screen and (max-width: 575.95px) {
+	.p-0-xs {
+	  padding: 0;
+	}
+	#home-bg-caption {
+	  width: 70%;
+	}
+	.nav-logo {
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  left: 4vw;
+	}
+	.mt-10vh-xs {
+	  margin-top: 10vh !important;
+	}
+	.pt-20vh-xs {
+	  padding-top: 20vh;
+	}
+	.n-position {
+	  transform: none;
+	  position: initial;
+	}
+	.green-box button {
+	  top: 0;
+	}
+	.p-5vw-xs {
+	  padding: 0 5vw !important;
+	}
+	.p-3vw-xs {
+	  padding: 3vw !important;
+	}
+	.mt-20px-xs {
+	  margin-top: 20px;
+	}
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="262.593" height="236.806" viewBox="0 0 262.593 236.806">
+  <g id="Group_12" data-name="Group 12" transform="translate(-600 -266)">
+    <path id="Rectangle" d="M0,88A88,88,0,0,1,88,0h55.168a88,88,0,0,1,87.44,97.909l-4.418,38.985a88,88,0,0,1-68.053,75.928l-50.75,11.463C52.351,236.717,0,194.871,0,138.448Z" transform="translate(600 266)" fill="#37d6ae"/>
+    <path id="Rectangle-2" data-name="Rectangle" d="M0,88A88,88,0,0,1,88,0h0c15.532,0,32.248,18.764,30.461,34.193l-.252,2.174a88,88,0,0,1-68.426,75.8h0C28.268,116.924,0,94.221,0,72.186Z" transform="translate(744 390)" fill="#fff" opacity="0.32"/>
+    <g id="Group_5" data-name="Group 5" transform="translate(-118.349 19.434)">
+      <text id="How_it_works" data-name="How it works" transform="translate(777 409)" fill="#fff" font-size="138" font-family="SegoeUIBlack, Segoe UI"><tspan x="0" y="0">B</tspan></text>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="15.545" height="15.955" transform="translate(798.198 293.646)" fill="#fff"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="15.545" height="15.955" transform="translate(817.983 293.646)" fill="#fff"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="15.545" height="15.955" transform="translate(798.198 408.943)" fill="#fff"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" width="15.545" height="15.955" transform="translate(817.983 408.943)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

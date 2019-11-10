@@ -1,0 +1,30 @@
+.progress-div {
+  position: relative;
+  left: 30px;
+  margin-bottom: 30px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.progress-line,
+.progress-line-empty {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.progress-line {
+  border-bottom: solid 2px #37d6ae;
+}
+
+.progress-line-empty {
+  border-bottom: solid 2px #29292b;
+}
+
+.highlight-color {
+  color: #37d6ae;  
+}

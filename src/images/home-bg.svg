@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="730" viewBox="0 0 1024 730">
+  <defs>
+    <clipPath id="clip-Desktop_1">
+      <rect width="1024" height="730"/>
+    </clipPath>
+  </defs>
+  <g id="Desktop_1" data-name="Desktop – 1" clip-path="url(#clip-Desktop_1)">
+    <rect width="1024" height="730" fill="#fff"/>
+    <rect id="Rectangle" width="1024" height="730" fill="#111113"/>
+    <g id="Rectangle-2" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, 838.47, -19.197)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="238" height="238" stroke="none"/>
+      <rect x="0.5" y="0.5" width="237" height="237" fill="none"/>
+    </g>
+    <g id="Rectangle-3" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, 682.103, -26.902)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="118" height="118" stroke="none"/>
+      <rect x="0.5" y="0.5" width="117" height="117" fill="none"/>
+    </g>
+    <g id="Rectangle-4" data-name="Rectangle" transform="matrix(0.602, 0.799, -0.799, 0.602, 1018.511, 677.787)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="56" height="56" stroke="none"/>
+      <rect x="0.5" y="0.5" width="55" height="55" fill="none"/>
+    </g>
+    <g id="Rectangle-5" data-name="Rectangle" transform="matrix(-0.454, 0.891, -0.891, -0.454, 146.115, -70.28)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.1">
+      <rect width="134" height="134" stroke="none"/>
+      <rect x="0.5" y="0.5" width="133" height="133" fill="none"/>
+    </g>
+    <g id="Rectangle-6" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, -84.879, 653.567)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="274" height="274" stroke="none"/>
+      <rect x="0.5" y="0.5" width="273" height="273" fill="none"/>
+    </g>
+  </g>
+</svg>

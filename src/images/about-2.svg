@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="730" viewBox="0 0 1024 730">
+  <defs>
+    <clipPath id="clip-About">
+      <rect width="1024" height="730"/>
+    </clipPath>
+  </defs>
+  <g id="About" clip-path="url(#clip-About)">
+    <rect width="1024" height="730" fill="#fff"/>
+    <rect id="Rectangle" width="1024" height="730" fill="#111113"/>
+    <g id="Rectangle-2" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, -109.377, 699.131)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="402" height="402" stroke="none"/>
+      <rect x="0.5" y="0.5" width="401" height="401" fill="none"/>
+    </g>
+    <g id="Rectangle-3" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, 190.207, 751.197)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="236" height="236" stroke="none"/>
+      <rect x="0.5" y="0.5" width="235" height="235" fill="none"/>
+    </g>
+    <g id="Rectangle-4" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, 831.207, -15.803)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="236" height="236" stroke="none"/>
+      <rect x="0.5" y="0.5" width="235" height="235" fill="none"/>
+    </g>
+  </g>
+</svg>

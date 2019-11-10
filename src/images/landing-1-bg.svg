@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="730" viewBox="0 0 1024 730">
+  <defs>
+    <clipPath id="clip-Desktop">
+      <rect width="1024" height="730"/>
+    </clipPath>
+  </defs>
+  <g id="Desktop" clip-path="url(#clip-Desktop)">
+    <rect width="1024" height="730" fill="#fff"/>
+    <rect id="Rectangle" width="1024" height="730" fill="#111113"/>
+    <g id="Rectangle-2" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, -123.793, 610.197)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="236" height="236" stroke="none"/>
+      <rect x="0.5" y="0.5" width="235" height="235" fill="none"/>
+    </g>
+    <g id="g16" transform="translate(808.558 153.481)" opacity="0.2">
+      <path id="symbol" d="M222.305,118.608c4.638-31-18.966-47.666-51.241-58.783L181.534,17.83,155.972,11.46,145.779,52.347c-6.72-1.675-13.622-3.254-20.48-4.82L135.564,6.371,110.017,0,99.54,41.98c-5.562-1.267-11.023-2.519-16.323-3.837l.029-.131-35.253-8.8-6.8,27.3s18.966,4.347,18.565,4.616c10.353,2.585,12.224,9.436,11.911,14.867L59.744,123.835a21.173,21.173,0,0,1,2.657.852c-.852-.211-1.762-.444-2.7-.67L42.985,191.035c-1.267,3.145-4.478,7.863-11.714,6.072.255.371-18.58-4.638-18.58-4.638L0,221.73l33.265,8.293c6.188,1.551,12.253,3.174,18.223,4.7L40.91,277.2l25.533,6.371,10.477-42.023c6.975,1.893,13.746,3.64,20.371,5.286L86.85,288.66l25.562,6.371,10.579-42.395c43.589,8.249,76.366,4.922,90.163-34.5,11.117-31.743-.553-50.054-23.487-61.994,16.7-3.851,29.282-14.838,32.639-37.531Zm-58.4,81.9c-7.9,31.743-61.346,14.583-78.674,10.28l14.037-56.272C116.591,158.84,172.157,167.4,163.9,200.507Zm7.907-82.358c-7.208,28.875-51.692,14.2-66.122,10.608L118.411,77.72C132.841,81.317,179.313,88.029,171.807,118.149Z" transform="matrix(0.966, -0.259, 0.259, 0.966, 24.571, 75.541)" fill="#fff" stroke="#31bf9c" stroke-width="0.7" opacity="0.2"/>
+    </g>
+    <g id="Rectangle-3" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, 223.666, 698.153)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="102" height="102" stroke="none"/>
+      <rect x="0.5" y="0.5" width="101" height="101" fill="none"/>
+    </g>
+    <g id="Rectangle-4" data-name="Rectangle" transform="matrix(0.914, -0.407, 0.407, 0.914, 211.392, -8.204)" fill="none" stroke="#37d6ae" stroke-miterlimit="10" stroke-width="1" opacity="0.2">
+      <rect width="60" height="60" stroke="none"/>
+      <rect x="0.5" y="0.5" width="59" height="59" fill="none"/>
+    </g>
+  </g>
+</svg>
