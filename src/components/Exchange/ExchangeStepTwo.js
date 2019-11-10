@@ -45,3 +45,5 @@ export const ExchangeStepTwo = ({ goToNext }) => {
 		</div>
 	);
 };
+
+export default ExchangeStepTwo;

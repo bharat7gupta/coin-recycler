@@ -1,11 +1,14 @@
 import React from 'react';
 import cx from 'classnames';
 
+import Header from '../common/Header';
+
 import styles from './TrackOrder.module.css';
 
 export const TrackOrder = () => {
 	return (
 		<div className={cx(styles["track-order"], "bg")}>
+			<Header />
 			<div className="center-all n-position mt-10vh-xs">
 				<div className="container">
 					<div className={cx(styles["track-order-wrapper"], "input-group mb-3 m-auto")}>

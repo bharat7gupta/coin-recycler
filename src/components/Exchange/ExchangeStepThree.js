@@ -54,3 +54,5 @@ export const ExchangeStepThree = () => {
 		</div>
 	);
 };
+
+export default ExchangeStepThree;

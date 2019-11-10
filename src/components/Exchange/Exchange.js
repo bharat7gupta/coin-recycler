@@ -3,9 +3,9 @@ import cx from 'classnames';
 
 import Header from '../common/Header';
 import Stepper from '../common/Stepper';
-import ExchangeStepOne from '../ExchangeStepOne';
-import ExchangeStepTwo from '../ExchangeStepTwo';
-import ExchangeStepThree from '../ExchangeStepThree';
+import ExchangeStepOne from './ExchangeStepOne';
+import ExchangeStepTwo from './ExchangeStepTwo';
+import ExchangeStepThree from './ExchangeStepThree';
 
 import styles from './Exchange.module.css';
 

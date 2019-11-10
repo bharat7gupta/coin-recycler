@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import cx from 'classnames';
 
 import greenRoller from 'images/green-roller.svg';
@@ -33,7 +34,7 @@ export const Home = () => {
 
 		setTimeout(() => {
 			setAddExchangesSlideInClass(true);
-		}, 200);
+		}, 100);
 	};
 
 	const onCloseExchanges = () => {
@@ -41,7 +42,7 @@ export const Home = () => {
 
 		setTimeout(() => {
 			setShowExchanges(false);
-		}, 200);
+		}, 400);
 	}
 
 	return (
@@ -101,12 +102,12 @@ export const Home = () => {
 			
 				{/* Track Order */}
 				<div className="d-flex pb-5">
-					<button
+					<Link
 						className={cx(styles["green-border-button"], "btn f-liber mt-5 mt-20px-xs ml-auto")}
-						type="button"
+						to='track-order'
 					>
 						Track order
-					</button>
+					</Link>
 				</div>
 			</div>
 

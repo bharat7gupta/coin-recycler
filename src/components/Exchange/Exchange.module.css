@@ -51,4 +51,11 @@
 
 .address-scan-icon {
 	position: relative;
+	cursor: pointer;
+}
+
+.qr-reader {
+	width: 300px;
+	height: 300px;
+	margin: 10px auto;
 }

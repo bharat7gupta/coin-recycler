@@ -1,38 +1,37 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import cx from "classnames";
 
-import bitFinex from 'images/bitfinex.svg';
-import shapeShift from 'images/shapeshift.svg';
 import { getAllExchanges } from "../../api/ApiCaller";
 
 import styles from './CoinExchanges.module.css'
 
 export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 	const [exchanges, setExchanges] = useState([]);
+	const [loading, setLoading] = useState(false);
+	const history = useHistory();
 
 	useEffect(() => {
+		setLoading(true);
 		getAllExchanges()
 			.then((data) => {
+				setLoading(false);
 				setExchanges(data);
 			});
 	}, []);
 
-	return (
-		<div className={
-			cx(
-				styles["exchanges"],
-				{[styles['slide-in']]: addSlideInClass},
-				styles["bg-green"],
-				styles["minh-100vh"],
-				"col-md-6 text-center p-4 m-0"
-			)
-		}>
-			<div className="container-fluid d-flex">
-				<p className="text-left d-color font-12 font-weight-bold">
-					Choose Exchanges
-				</p>
-				<i class={cx(styles["close"], "fa fa-times-circle ml-auto")} onClick={onCloseExchanges}></i>
-			</div>
+	const handleExchangeSelection = (exchange) => {
+		history.push('/exchange');
+	};
+
+	const renderLoader = () => {
+		return (
+			<i className={cx(styles["loader"], "fa fa-circle-notch fa-spin")}></i>
+		)
+	};
+
+	const renderExchanges = () => {
+		return (
 			<div
 				className="d-flex flex-column text-center container p-5 p-5vw-xs"
 			>
@@ -40,10 +39,10 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 				{exchanges && exchanges.length > 0 ?
 					exchanges.map((exchange, index) => (
 						<React.Fragment>
-							<div className={styles['coin-exchange']}>
+							<div className={styles['coin-exchange']} onClick={() => handleExchangeSelection(exchange)}>
 								<div className={cx(styles["price-box-row-1"], "row")}>
 									<div className="col-6 d-flex flex-column align-items-start">
-										<img className="my-auto" src={bitFinex} alt="bitfinex" />
+										<img className="my-auto" src={`/static/media/${exchange.logo}`} alt={exchange.name} />
 									</div>
 									<div className="col-6 text-right">
 										<p className="text-muted font-10">{exchange.lastUpdatedText}</p>
@@ -76,6 +75,27 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 					))
 				: null}
 			</div>
+		)
+	}
+
+	return (
+		<div className={
+			cx(
+				styles["exchanges"],
+				{[styles['slide-in']]: addSlideInClass},
+				styles["bg-green"],
+				styles["minh-100vh"],
+				"col-md-6 text-center p-4 m-0"
+			)
+		}>
+			<div className="container-fluid d-flex">
+				<p className="text-left d-color font-12 font-weight-bold">
+					Choose Exchanges
+				</p>
+				<i className={cx(styles["close"], "fa fa-times-circle ml-auto")} onClick={onCloseExchanges}></i>
+			</div>
+
+			{loading ? renderLoader() : renderExchanges()}
 		</div>
 	)
 }

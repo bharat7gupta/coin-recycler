@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
+import Header from '../common/Header';
 import greenCloudBitcoin from '../../images/green-cloud-btc.svg';
 
 import styles from './AboutBitcoin.module.css';
@@ -8,6 +9,7 @@ import styles from './AboutBitcoin.module.css';
 export const AboutBitcoin = () => {
 	return (
 		<div className={cx("bg", styles["about-2-bg"])}>
+			<Header />
 			<div className="container-fluid center-all text-left n-position mt-10vh-xs">
 				<div className="container">
 					<div className="row">

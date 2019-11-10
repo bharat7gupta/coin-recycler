@@ -4,6 +4,6 @@ export const getAllExchanges = () => {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			resolve(exchanges);
-		})
+		}, 1000);
 	});
 }

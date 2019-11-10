@@ -1,8 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Stepper from '../common/Stepper';
-
+import Header from '../common/Header';
 import greenCloudSupport from '../../images/green-cloud-support.svg';
 
 import styles from './FAQAndSupport.module.css';
@@ -10,6 +9,8 @@ import styles from './FAQAndSupport.module.css';
 export const FAQAndSupport = () => {
 	return (
 		<div className={cx(styles["support"], "bg")}>
+			<Header />
+
 			<div className="n-position mt-10vh-xs center-all">
 				<div className="container text-left">
 					<h1 className="font-24 f-liber font-weight-bolder text-left">

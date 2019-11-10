@@ -7,7 +7,6 @@
 }
 
 .dropdown select {
-	text-align: right;
 	border: none;
 	background-color: inherit;
 	color: #a4a4a5;
@@ -30,8 +29,8 @@
 	font-size: 20px;
 	pointer-events: none;
 	position: absolute;
-	top: 6px;
-	left: 90%;
+	top: 5px;
+	right: -8px;
 	pointer-events: none;
 }
 
@@ -40,7 +39,6 @@
 }
 
 .dropdown select option {
-	padding: 30px;
-	color: #37d6ae;
+	color: #333A3D;
 	margin-top: 10px;
 }

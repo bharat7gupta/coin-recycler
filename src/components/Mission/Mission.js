@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
+import Header from '../common/Header';
 import greenCloud from '../../images/green-cloud.svg';
 
 import styles from "./Mission.module.css";
@@ -8,6 +9,8 @@ import styles from "./Mission.module.css";
 export const Mission = () => {
 	return (
 		<div className={cx("bg", styles['mission'])}>
+			<Header />
+
 			<div className="container-fluid center-all text-left n-position mt-10vh-xs">
 				<div className="container">
 					<div className="row mt-10vh-xs">

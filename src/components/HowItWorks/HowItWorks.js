@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
+import Header from '../common/Header';
 import rocketIcon from '../../images/rocket-icon.svg';
 import exchangeIcon from '../../images/exchange-icon.svg';
 import bitcoinIcon from '../../images/bitcoin-icon.svg';
@@ -10,6 +11,8 @@ import styles from './HowItWorks.module.css'
 export const HowItWorks = () => {
 	return (
 		<div className={cx("bg", styles["how-it-works"])}>
+			<Header />
+
 			<img src="/img/audio-image.svg" alt="" class="audio-image" />
 			<div class="center-all n-position mt-10vh-xs">
 				<div class="container">

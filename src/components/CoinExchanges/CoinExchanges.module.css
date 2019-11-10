@@ -1,20 +1,27 @@
 .exchanges {
 	position: absolute;
 	top: 0;
-	left: 100%;
 	right: 0;
 	bottom: 0;
 	transition: 0.4s;
 	overflow: auto;
+	transform: translateX(100%);
+	z-index: 10;
 }
 
 .slide-in {
-	left: 50%;
+	transform: translateX(0%);
 }
 
 .close {
 	cursor: pointer;
 	color: black;
+}
+
+.loader {
+	color: #333A3D;
+	font-size: 48px;
+	margin-top: 30%;
 }
 
 .minh-100vh {
