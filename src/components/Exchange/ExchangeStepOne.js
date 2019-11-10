@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import cx from 'classnames';
-import QrReader from 'react-qr-reader'
+import QrReader from 'react-qr-reader';
+import toast from 'cogo-toast';
 
 import addressScanIcon from '../../images/address-scan.svg';
 
@@ -28,8 +29,12 @@ export const ExchangeStepOne = ({ goToNext }) => {
 	};
 
 	const goToNextStep = () => {
-		if (bitcoinWalletAddress) {
+		if (!!bitcoinWalletAddress) {
 			goToNext();
+		} else {
+			toast.error('Please specify Bitcoin wallet address', { 
+				position: 'bottom-center',
+			});
 		}
 	};
 
@@ -73,12 +78,14 @@ export const ExchangeStepOne = ({ goToNext }) => {
 				/>
 			</div>
 
-			{showQRReader && <QrReader
-				delay={300}
-				onError={handleError}
-				onScan={handleScan}
-				className={styles['qr-reader']}
-			/>}
+			{showQRReader && (
+				<QrReader
+					delay={300}
+					onError={handleError}
+					onScan={handleScan}
+					className={styles['qr-reader']}
+				/>
+			)}
 
 			<p className="font-10 text-center m-0">
 				By clicking Next you agree to terms & privacy policy
