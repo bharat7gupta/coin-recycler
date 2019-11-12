@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import styles from '../Exchange/Exchange.module.css';
+import styles from 'components/Exchange/Exchange.module.css';
 
 export const ExchangeStepThree = () => {
 	return (

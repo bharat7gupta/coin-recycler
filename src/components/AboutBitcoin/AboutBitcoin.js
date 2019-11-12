@@ -1,8 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Header from '../common/Header';
-import greenCloudBitcoin from '../../images/green-cloud-btc.svg';
+import Header from 'components/common/Header';
+import greenCloudBitcoin from 'images/green-cloud-btc.svg';
 
 import styles from './AboutBitcoin.module.css';
 

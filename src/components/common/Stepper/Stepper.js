@@ -1,8 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
 
-import progressDotFill from '../../../images/progress-dot-fill.svg';
-import progressDotEmpty from '../../../images/progress-dot-empty.svg';
+import progressDotFill from 'images/progress-dot-fill.svg';
+import progressDotEmpty from 'images/progress-dot-empty.svg';
 
 import styles from './Stepper.module.css';
 
@@ -26,6 +26,7 @@ export const Stepper = ({ steps, currentStep }) => {
 								className={
 									cx(
 										"d-inline-block",
+										styles["break-text-sm"],
 										{
 											[styles["highlight-color"]]: index <= currentStep
 										}

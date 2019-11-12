@@ -1,8 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Header from '../common/Header';
-import greenCloud from '../../images/green-cloud.svg';
+import Header from 'components/common/Header';
+import greenCloud from 'images/green-cloud.svg';
 
 import styles from "./Mission.module.css";
 

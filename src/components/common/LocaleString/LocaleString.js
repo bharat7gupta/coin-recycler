@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import supportedLanguages from '../../../config/supported-languages.json';
+import supportedLanguages from 'config/supported-languages.json';
 
 export const LocaleString = ({ strKey, className, contentStyle }) => {
 	const [ text, setText ] = useState('');
@@ -11,7 +11,7 @@ export const LocaleString = ({ strKey, className, contentStyle }) => {
 	const languageCode = 'en-US';
 	// const languageCode = window.localStorage.getItem("currentLanguage") || supportedLanguages[0].code;
 
-	import('../../../config/strings-' + languageCode + '.json')
+	import('config/strings-' + languageCode + '.json')
 			.then(strings => {
 				setText(strings[strKey]);
 			});

@@ -1,5 +1,5 @@
 .track-order {
-	background-image: url('../../images/about-2.svg');
+	background-image: url('~images/about-2.svg');
 	min-height: 100vh;
 }
 
@@ -24,7 +24,6 @@
   font-size: 16px;
   padding: 15px 40px;
   color: #111113;
-  z-index: 5;
 }
 
 .track-order-input,
@@ -41,4 +40,30 @@
   display: flex;
   min-height: 90vh;
   margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .track-order-wrapper {
+    max-width: 670px;
+  }
+  .track-order-wrapper .input-group-text,
+  .track-order-wrapper .input-group-text:focus {
+    background-color: #37d6ae;
+    border-radius: 13px;
+    position: relative;
+    left: -20px;
+    border: none;
+    font-size: 14px;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  .track-order-wrapper input,
+  .track-order-wrapper input:focus {
+    height: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 13px;
+    box-shadow: none;
+    z-index: inherit;
+  }
 }

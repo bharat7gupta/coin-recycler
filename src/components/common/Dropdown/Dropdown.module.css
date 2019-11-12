@@ -4,6 +4,7 @@
 	height: 50%;
 	font-family: Liber Grotesque;
 	cursor: pointer;
+	display: inline-block;
 }
 
 .dropdown select {
@@ -27,7 +28,6 @@
 .dropdown .caret {
 	color: #37d6ae;
 	font-size: 20px;
-	pointer-events: none;
 	position: absolute;
 	top: 5px;
 	right: -8px;

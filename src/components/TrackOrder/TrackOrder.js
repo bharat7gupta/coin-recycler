@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Header from '../common/Header';
+import Header from 'components/common/Header';
 
 import styles from './TrackOrder.module.css';
 

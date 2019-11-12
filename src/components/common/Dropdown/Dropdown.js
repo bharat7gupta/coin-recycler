@@ -3,7 +3,15 @@ import cx from 'classnames';
 
 import styles from './Dropdown.module.css';
 
-export const Dropdown = ({ list, selectedValue, containerClass, caretClass, onChange }) => {
+export const Dropdown = ({
+	list,
+	selectedValue,
+	containerClass,
+	caretClass,
+	idField,
+	valueField,
+	onChange
+}) => {
 
 	const onSelectionChange = (e) => {
 		onChange && onChange(e.target.value);
@@ -17,7 +25,7 @@ export const Dropdown = ({ list, selectedValue, containerClass, caretClass, onCh
 		<div className={styles["dropdown"]}>
 			<select value={selectedValue} className={containerClass} onChange={onSelectionChange}>
 				{list.map(item => (
-					<option value={item.code}>{item.name}</option>
+					<option key={item[idField]} value={item[idField]}>{item[valueField]}</option>
 				))}
 			</select>
 

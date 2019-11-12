@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import cx from 'classnames';
 
 import greenRoller from 'images/green-roller.svg';
-import Header from '../common/Header';
-import Dropdown from '../common/Dropdown';
-import LocaleString from '../common/LocaleString';
-import CoinExchanges from '../CoinExchanges';
+import Header from 'components/common/Header';
+import Dropdown from 'components/common/Dropdown';
+import LocaleString from 'components/common/LocaleString';
+import CoinExchanges from 'components/CoinExchanges';
 
 import styles from './Home.module.css';
 
@@ -76,7 +76,7 @@ export const Home = () => {
 								/>
 							</div>
 							<div className="col-4 text-right flex-column d-flex f-liber p-3vw-xs">
-								<Dropdown list={currencyList} />
+								<Dropdown list={currencyList} idField='id' valueField='name' />
 								<p className={cx(styles["grey-color"], "font-20 mt-auto font-weight-bold mb-2")}>
 									BTC
 								</p>

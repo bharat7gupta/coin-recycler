@@ -1,8 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Header from '../common/Header';
-import greenCloudSupport from '../../images/green-cloud-support.svg';
+import Header from 'components/common/Header';
+import greenCloudSupport from 'images/green-cloud-support.svg';
 
 import styles from './FAQAndSupport.module.css';
 

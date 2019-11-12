@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import cx from "classnames";
 
-import { getAllExchanges } from "../../api/ApiCaller";
+import { getAllExchanges } from "api/ApiCaller";
 
 import styles from './CoinExchanges.module.css'
 

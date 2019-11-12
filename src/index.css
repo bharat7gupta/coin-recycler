@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000;
 }
 
 code {
@@ -88,9 +89,6 @@ p {
 	.p-0-xs {
 	  padding: 0;
 	}
-	#home-bg-caption {
-	  width: 70%;
-	}
 	.nav-logo {
 	  position: fixed;
 	  z-index: 1;
@@ -119,4 +117,55 @@ p {
 	.mt-20px-xs {
 	  margin-top: 20px;
 	}
+}
+
+@media (max-width: 767.98px) {
+  .px-0-sm {
+    padding: 0;
+  }
+  .px-5vw-sm {
+    padding: 0 5vw;
+  }
+  .n-position-md {
+    transform: none;
+    position: initial;
+  }
+  .mt-10vh-sm {
+    margin-top: 10vh;
+  }
+  .rounded-bg-grey,
+  .rounded-bg-grey:focus {
+    border-radius: 13px;
+    background-color: #979797;
+    border: none;
+  }
+  #track-order-wrapper {
+    max-width: 670px;
+  }
+  #track-order-wrapper .input-group-text,
+  #track-order-wrapper .input-group-text:focus {
+    background-color: #37d6ae;
+    border-radius: 13px;
+    position: relative;
+    left: -20px;
+    border: none;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  #track-order-wrapper input,
+  #track-order-wrapper input:focus {
+    height: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 13px;
+    box-shadow: none;
+    z-index: inherit;
+  }
+  #CoinRecycler,
+  #CoinRecycler-2 {
+    font-size: 30px;
+  }
+  #logo-default {
+    width: 300px;
+  }
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Header from '../common/Header';
-import rocketIcon from '../../images/rocket-icon.svg';
-import exchangeIcon from '../../images/exchange-icon.svg';
-import bitcoinIcon from '../../images/bitcoin-icon.svg';
+import Header from 'components/common/Header';
+import rocketIcon from 'images/rocket-icon.svg';
+import exchangeIcon from 'images/exchange-icon.svg';
+import bitcoinIcon from 'images/bitcoin-icon.svg';
 
 import styles from './HowItWorks.module.css'
 

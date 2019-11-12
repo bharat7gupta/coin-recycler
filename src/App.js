@@ -1,14 +1,14 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Home from './components/Home';
-import AboutBitcoin from './components/AboutBitcoin';
-import Mission from './components/Mission';
-import HowItWorks from './components/HowItWorks';
-import Exchange from './components/Exchange';
-import FAQAndSupport from './components/FAQAndSupport';
-import TrackOrder from './components/TrackOrder';
-import Team from './components/Team';
+import Home from 'components/Home';
+import AboutBitcoin from 'components/AboutBitcoin';
+import Mission from 'components/Mission';
+import HowItWorks from 'components/HowItWorks';
+import Exchange from 'components/Exchange';
+import FAQAndSupport from 'components/FAQAndSupport';
+import TrackOrder from 'components/TrackOrder';
+import Team from 'components/Team';
 
 import styles from './App.module.css';
 

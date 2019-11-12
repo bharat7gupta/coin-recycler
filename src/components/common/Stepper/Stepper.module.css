@@ -28,3 +28,13 @@
 .highlight-color {
   color: #37d6ae;  
 }
+
+@media screen and (max-width: 575.95px) {
+  .progress-line-empty {
+    top: 18%;
+  }
+
+  .break-text-sm {
+    display: block !important;
+  }
+}

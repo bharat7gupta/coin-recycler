@@ -1,10 +1,10 @@
 import React from 'react';
 import cx from 'classnames';
 
-import qrCode from '../../images/qr-code.svg';
-import copyIcon from '../../images/copy-icon.svg';
+import qrCode from 'images/qr-code.svg';
+import copyIcon from 'images/copy-icon.svg';
 
-import styles from '../Exchange/Exchange.module.css';
+import styles from 'components/Exchange/Exchange.module.css';
 
 export const ExchangeStepTwo = ({ goToNext }) => {
 	return (

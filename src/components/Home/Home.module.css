@@ -1,5 +1,5 @@
 .home {
-	background-image: url('../../images/landing-1-bg.svg');
+	background-image: url('~images/landing-1-bg.svg');
 }
 
 .rounded-box {
@@ -67,6 +67,7 @@
 	bottom: 22px;
 	margin-right: 5vw;
 	right: 5vw;
+	position: fixed;
 }
 
 .green-border-button:hover {

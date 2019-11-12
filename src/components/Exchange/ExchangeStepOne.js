@@ -3,9 +3,9 @@ import cx from 'classnames';
 import QrReader from 'react-qr-reader';
 import toast from 'cogo-toast';
 
-import addressScanIcon from '../../images/address-scan.svg';
+import addressScanIcon from 'images/address-scan.svg';
 
-import styles from '../Exchange/Exchange.module.css';
+import styles from 'components/Exchange/Exchange.module.css';
 
 export const ExchangeStepOne = ({ goToNext }) => {
 	let inputRef;
@@ -18,7 +18,7 @@ export const ExchangeStepOne = ({ goToNext }) => {
 	};
 
 	const scanQRCode = () => {
-		setShowQRReader(true);
+		setShowQRReader(!showQRReader);
 	};
 
 	const handleScan = (data) => {
@@ -29,7 +29,7 @@ export const ExchangeStepOne = ({ goToNext }) => {
 	};
 
 	const goToNextStep = () => {
-		if (!!bitcoinWalletAddress) {
+		if (!!bitcoinWalletAddress && bitcoinWalletAddress.trim() !== "") {
 			goToNext();
 		} else {
 			toast.error('Please specify Bitcoin wallet address', { 

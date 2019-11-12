@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import cx from 'classnames';
 
-import Header from '../common/Header';
-import Stepper from '../common/Stepper';
+import Header from 'components/common/Header';
+import Stepper from 'components/common/Stepper';
 import ExchangeStepOne from './ExchangeStepOne';
 import ExchangeStepTwo from './ExchangeStepTwo';
 import ExchangeStepThree from './ExchangeStepThree';
