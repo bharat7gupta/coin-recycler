@@ -32,14 +32,16 @@ export const ExchangeStepOne = ({ goToNext }) => {
 		if (!!bitcoinWalletAddress && bitcoinWalletAddress.trim() !== "") {
 			goToNext();
 		} else {
-			toast.error('Please specify Bitcoin wallet address', { 
+			toast.error('Please specify Bitcoin wallet address', {
 				position: 'bottom-center',
 			});
 		}
 	};
 
 	const handleError = (data) => {
-		console.log('handleError', data);
+		toast.error('Please try again!', {
+			position: 'bottom-center',
+		});
 	};
 
 	const handleBitcoinWalletAddressChange = (e) => {

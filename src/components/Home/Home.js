@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import cx from 'classnames';
 
 import greenRoller from 'images/green-roller.svg';
-import Header from 'components/common/Header';
 import Dropdown from 'components/common/Dropdown';
 import LocaleString from 'components/common/LocaleString';
 import CoinExchanges from 'components/CoinExchanges';
@@ -46,8 +45,7 @@ export const Home = () => {
 	}
 
 	return (
-		<div className={cx(styles["home"], "bg")}>
-			<Header />
+		<React.Fragment>
 			<div className="center-all container-fluid p-0-xs n-position-md mt-10vh-xs">
 				<div className="row mx-0">
 					<div className="col-md-6 p-0-xs">
@@ -117,6 +115,6 @@ export const Home = () => {
 					onCloseExchanges={onCloseExchanges}
 				/>
 			)}
-		</div>
+		</React.Fragment>
 	);
 }

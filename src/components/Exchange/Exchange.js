@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import cx from 'classnames';
 
-import Header from 'components/common/Header';
 import Stepper from 'components/common/Stepper';
 import ExchangeStepOne from './ExchangeStepOne';
 import ExchangeStepTwo from './ExchangeStepTwo';
@@ -49,16 +47,12 @@ export const Exchange = () => {
 	};
 
 	return (
-		<div className={cx(styles["exchange"], "bg")}>
-			<Header />
+		<div className="center-all n-position mt-10vh-xs">
+			<div className="container maxw-600 p-0-xs">
 
-			<div className="center-all n-position mt-10vh-xs">
-				<div className="container maxw-600 p-0-xs">
+				<Stepper steps={exchangeSteps} currentStep={currentStep} />
 
-					<Stepper steps={exchangeSteps} currentStep={currentStep} />
-
-					{renderExchangeStep(currentStep)}
-				</div>
+				{renderExchangeStep(currentStep)}
 			</div>
 		</div>
 	);
