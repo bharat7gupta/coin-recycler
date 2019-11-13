@@ -3,19 +3,23 @@ import cx from 'classnames';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from 'components/common/Header';
-import Home from 'components/Home';
-import AboutBitcoin from 'components/AboutBitcoin';
-import Mission from 'components/Mission';
-import HowItWorks from 'components/HowItWorks';
-import Exchange from 'components/Exchange';
-import FAQAndSupport from 'components/FAQAndSupport';
-import TrackOrder from 'components/TrackOrder';
-import Team from 'components/Team';
 
 import { UserProvider } from './UserContext';
 import supportedLanguages from 'config/supported-languages.json';
 
+import AsyncComponent from './AsyncComponent';
+
 import styles from './App.module.css';
+
+/* Dynamic routes */
+const home = () => import(/* webpackChunkName: "home" */ 'components/Home');
+const aboutBitcoin = () => import(/* webpackChunkName: "about-bitcoin" */ 'components/AboutBitcoin');
+const mission = () => import(/* webpackChunkName: "mission" */ 'components/Mission');
+const howItWorks = () => import(/* webpackChunkName: "how-it-works" */ 'components/HowItWorks');
+const exchage = () => import(/* webpackChunkName: "exchange" */ 'components/Exchange');
+const faqAndSupport = () => import(/* webpackChunkName: "faq-and-support" */ 'components/FAQAndSupport');
+const trackOrder = () => import(/* webpackChunkName: "track-order" */ 'components/TrackOrder');
+const team = () => import(/* webpackChunkName: "team" */ 'components/Team');
 
 function App() {
 	let languageCode = window.localStorage.getItem('currentLanguage');
@@ -44,14 +48,14 @@ function App() {
 					<Header />
 					<div className={styles['App-content']}>
 						<Switch>
-							<Route path="/" exact component={ Home } />
-							<Route path="/about-bitcoin" component={ AboutBitcoin } />
-							<Route path="/mission" component={ Mission } />
-							<Route path="/how-it-works" component={ HowItWorks } />
-							<Route path="/exchange" component={ Exchange } />
-							<Route path="/faq" component={ FAQAndSupport } />
-							<Route path="/track-order" component={ TrackOrder } />
-							<Route path="/team" component={ Team } />
+							<Route path="/" exact component={() => <AsyncComponent moduleProvider={home} />} />
+							<Route path="/about-bitcoin" component={() => <AsyncComponent moduleProvider={aboutBitcoin} />} />
+							<Route path="/mission" component={() => <AsyncComponent moduleProvider={mission} />} />
+							<Route path="/how-it-works" component={() => <AsyncComponent moduleProvider={howItWorks} />} />
+							<Route path="/exchange" component={() => <AsyncComponent moduleProvider={exchage} />} />
+							<Route path="/faq" component={() => <AsyncComponent moduleProvider={faqAndSupport} />} />
+							<Route path="/track-order" component={() => <AsyncComponent moduleProvider={trackOrder} />} />
+							<Route path="/team" component={() => <AsyncComponent moduleProvider={team} />} />
 						</Switch>
 					</div>
 				</div>

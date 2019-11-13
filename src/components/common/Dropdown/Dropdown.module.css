@@ -2,7 +2,7 @@
 .dropdown {
 	position: relative;
 	height: 50%;
-	font-family: Liber Grotesque;
+	font-family: Liber Grotesque, Arial, Helvetica, sans-serif;
 	cursor: pointer;
 	display: inline-block;
 }

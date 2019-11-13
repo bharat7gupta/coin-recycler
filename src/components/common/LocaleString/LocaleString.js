@@ -2,6 +2,14 @@ import React, { useState, useContext } from 'react';
 
 import UserContext from 'UserContext';
 
+const importChunk = (languageCode) => {
+	return import(
+		/* webpackPreload: true */
+		/* webpackChunkName: "[request]" */ 
+		'config/strings-' + languageCode + '.json'
+	);
+}
+
 export const LocaleString = ({ strKey, attributes, className }) => {
 	const [ text, setText ] = useState('');
 	const context = useContext(UserContext);
@@ -12,12 +20,11 @@ export const LocaleString = ({ strKey, attributes, className }) => {
 
 	const languageCode = context.data.currentLanguage;
 
-	import('config/strings-' + languageCode + '.json')
-		.then(strings => {
-			const str = strings[strKey] || '';
-			const children = TEMPLATE_PATTERN.test(str) ? interpolateString(str, attributes) : str;
-			setText(children);
-		});
+	importChunk(languageCode).then(strings => {
+		const str = strings[strKey] || '';
+		const children = TEMPLATE_PATTERN.test(str) ? interpolateString(str, attributes) : str;
+		setText(children);
+	});
 
 	return className ? <span className={className}>{text}</span> : text;
 };
@@ -27,7 +34,7 @@ export const getLocaleString = (strKey) => {
 	const languageCode = window.localStorage.getItem("currentLanguage");
 
 	return new Promise(resolve => {
-		import('config/strings-' + languageCode + '.json')
+		importChunk(languageCode)
 			.then(strings => resolve(strings[strKey]));
 	})
 };

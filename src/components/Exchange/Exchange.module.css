@@ -21,7 +21,7 @@
 		border: none;
 		text-align: center;
 		box-shadow: none;
-		font-family: Liber Grotesque;
+		font-family: Liber Grotesque, Arial, Helvetica, sans-serif;
 		font-size: 20px;
 		font-weight: bold;
 	}

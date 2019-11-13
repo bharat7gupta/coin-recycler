@@ -1,15 +1,18 @@
 @font-face {
   font-family: Helios Rounded;
+  font-display: swap;
   src: url(fonts/FontsFree-Net-HeliosRounded.ttf);
 }
 
 @font-face {
   font-family: Liber Grotesque;
+  font-display: swap;
   src: url(fonts/LiberGrotesqueFamily-Regular.ttf);
 }
 
 @font-face {
   font-family: Avenir Next;
+  font-display: swap;
   src: url(fonts/AvenirNextLTPro-Regular.otf);
 }
 
