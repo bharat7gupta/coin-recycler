@@ -34,7 +34,7 @@ export const ExchangeStepTwo = ({ goToNext }) => {
 			</div>
 
 			<p className="font-10 m-0">
-				<LocaleString strKey='ordeId' />
+				<LocaleString strKey='orderId' />
 				: 5383c2f3-e7bd-4876-a707-1fb9217fdbeb
 				<br />
 				<LocaleString strKey='recipientAddress' />

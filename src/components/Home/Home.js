@@ -112,7 +112,7 @@ export const Home = () => {
 						className={cx(styles["green-border-button"], "btn f-liber mt-5 mt-20px-xs ml-auto")}
 						to='track-order'
 					>
-						Track order
+						<LocaleString strKey='trackOrderButton' />
 					</Link>
 				</div>
 			</div>

@@ -63,7 +63,9 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 										</p>
 									</div>
 									<div className="col-6 text-right">
-										<p className="font-12 text-muted">Price</p>
+										<p className="font-12 text-muted">
+											<LocaleString strKey='price' />
+										</p>
 										<p className="font-16 font-weight-bold">
 											{exchange.btnPrice}<span className="font-14 ml-2">BTC</span>
 										</p>
