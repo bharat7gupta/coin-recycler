@@ -2,6 +2,7 @@ import React from 'react';
 import cx from 'classnames';
 
 import styles from 'components/Exchange/Exchange.module.css';
+import LocaleString from 'components/common/LocaleString';
 
 export const ExchangeStepThree = () => {
 	return (
@@ -12,7 +13,7 @@ export const ExchangeStepThree = () => {
 				</div>
 				<div className="col-6 text-left">
 					<p className="f-liber font-14 font-weight-light">
-						Order Placed
+						<LocaleString strKey='orderPlaced' />
 					</p>
 				</div>
 			</div>
@@ -22,7 +23,7 @@ export const ExchangeStepThree = () => {
 				</div>
 				<div className="col-6 text-left">
 					<p className="f-liber font-14 font-weight-light">
-						Order recieved
+						<LocaleString strKey='orderReceived' />
 					</p>
 				</div>
 			</div>
@@ -32,7 +33,7 @@ export const ExchangeStepThree = () => {
 				</div>
 				<div className="col-6 text-left">
 					<p className="f-liber font-14 font-weight-light">
-						Your order is in process
+						<LocaleString strKey='orderInProgress' />
 					</p>
 				</div>
 			</div>
@@ -42,14 +43,13 @@ export const ExchangeStepThree = () => {
 				</div>
 				<div className="col-6 text-left">
 					<p className="f-liber font-14 font-weight-light">
-						Successful
+						<LocaleString strKey='orderSuccessful' />
 					</p>
 				</div>
 			</div>
 
 			<p className="font-14 m-0 mt-4 text-center">
-				Exchange will automatically initiate once deposit is detected on
-				below address Track order
+				<LocaleString strKey='exchangeMessage' />
 			</p>
 		</div>
 	);

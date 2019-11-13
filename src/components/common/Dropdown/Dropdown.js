@@ -10,6 +10,7 @@ export const Dropdown = ({
 	caretClass,
 	idField,
 	valueField,
+	title,
 	onChange
 }) => {
 
@@ -22,7 +23,7 @@ export const Dropdown = ({
 	}
 
 	return (
-		<div className={styles["dropdown"]}>
+		<div className={styles["dropdown"]} title={title}>
 			<select value={selectedValue} className={containerClass} onChange={onSelectionChange}>
 				{list.map(item => (
 					<option key={item[idField]} value={item[idField]}>{item[valueField]}</option>

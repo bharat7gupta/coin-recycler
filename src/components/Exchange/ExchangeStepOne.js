@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import cx from 'classnames';
 import QrReader from 'react-qr-reader';
-import toast from 'cogo-toast';
 
 import addressScanIcon from 'images/address-scan.svg';
-
+import { showErrorToast } from 'Toast.js';
 import styles from 'components/Exchange/Exchange.module.css';
+import LocaleString from 'components/common/LocaleString';
 
 export const ExchangeStepOne = ({ goToNext }) => {
 	let inputRef;
@@ -32,16 +32,12 @@ export const ExchangeStepOne = ({ goToNext }) => {
 		if (!!bitcoinWalletAddress && bitcoinWalletAddress.trim() !== "") {
 			goToNext();
 		} else {
-			toast.error('Please specify Bitcoin wallet address', {
-				position: 'bottom-center',
-			});
+			showErrorToast('emptyBitcoinAddressError');
 		}
 	};
 
 	const handleError = (data) => {
-		toast.error('Please try again!', {
-			position: 'bottom-center',
-		});
+		showErrorToast('tryAgain');
 	};
 
 	const handleBitcoinWalletAddressChange = (e) => {
@@ -51,15 +47,15 @@ export const ExchangeStepOne = ({ goToNext }) => {
 	return (
 		<div className={cx(styles["green-box"], "p-3vw-xs")}>
 			<p className="text-right d-inline-block float-right">
-				<a className={cx(styles["help-icon"])} href="#">
+				<span className={cx(styles["help-icon"])}>
 					<i className="far fa-question-circle"></i>
-				</a>
+				</span>
 			</p>
 			<h5 className="f-liber font-20 d-inline-block">
-				Enter your Bitcoin wallet address
+				<LocaleString strKey='enterWalletAddress' />
 			</h5>
 			<p className="f-liber font-14 font-weight-light">
-				Address for the wallet in which Bitcoin will be deposited
+				<LocaleString strKey='enterWalletAddressInfo' />
 			</p>
 			<div className="form-group mt-5 mb-5 d-flex">
 				<input
@@ -67,7 +63,7 @@ export const ExchangeStepOne = ({ goToNext }) => {
 					type="text"
 					className="form-control d-inline-block"
 					id="bitAccount"
-					placeholder="0000-00000-0000-0000-00000"
+					placeholder="0123456789abcdef0123456789abcdef"
 					value={bitcoinWalletAddress}
 					onChange={handleBitcoinWalletAddressChange}
 				/>
@@ -90,10 +86,10 @@ export const ExchangeStepOne = ({ goToNext }) => {
 			)}
 
 			<p className="font-10 text-center m-0">
-				By clicking Next you agree to terms & privacy policy
+				<LocaleString strKey='tncAgreement' />
 			</p>
 			<button type="button" className="btn f-avenir font-18" onClick={goToNextStep}>
-				Next
+				<LocaleString strKey='next' />
 			</button>
 		</div>
 	);

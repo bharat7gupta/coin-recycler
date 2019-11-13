@@ -4,23 +4,22 @@ import Stepper from 'components/common/Stepper';
 import ExchangeStepOne from './ExchangeStepOne';
 import ExchangeStepTwo from './ExchangeStepTwo';
 import ExchangeStepThree from './ExchangeStepThree';
-
-import styles from './Exchange.module.css';
+import LocaleString from 'components/common/LocaleString';
 
 export const Exchange = () => {
 
 	const exchangeSteps = [
 		{
 			id: 'ENTER_ADDRESS',
-			name: 'Enter Address'
+			name: <LocaleString strKey='enterAddress' />
 		},
 		{
 			id: 'SEND_LINK',
-			name: 'Send Link'
+			name: <LocaleString strKey='sendLink' />
 		},
 		{
 			id: 'INITIATE_EXCHANGE',
-			name: 'Initiate exchange'
+			name: <LocaleString strKey='initiateExchange' />
 		}
 	];
 

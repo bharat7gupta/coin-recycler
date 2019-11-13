@@ -5,6 +5,7 @@ import cx from "classnames";
 import { getAllExchanges } from "api/ApiCaller";
 
 import styles from './CoinExchanges.module.css'
+import LocaleString from 'components/common/LocaleString';
 
 export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 	const [exchanges, setExchanges] = useState([]);
@@ -47,14 +48,16 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 									<div className="col-6 text-right">
 										<p className="text-muted font-10">{exchange.lastUpdatedText}</p>
 										<p className="font-10">
-											Don’t mind waiting little get the
-											<span className={styles["p-color"]}>Best price</span>
+											<LocaleString strKey='dontMindWaiting' />
+											<LocaleString strKey='bestPrice' className={styles["p-color"]} />
 										</p>
 									</div>
 								</div>
 								<div className={cx(styles["price-box-row-2"], "row")}>
 									<div className="col-6 d-flex flex-column align-items-start">
-										<p className="font-12 text-muted">Amount</p>
+										<p className="font-12 text-muted">
+											<LocaleString strKey='amount' />
+										</p>
 										<p className="font-16 font-weight-bold">
 											{exchange.btnAmount}<span className="font-14 ml-2">BTC</span>
 										</p>
@@ -90,7 +93,7 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 		}>
 			<div className="container-fluid d-flex">
 				<p className="text-left d-color font-12 font-weight-bold">
-					Choose Exchanges
+					<LocaleString strKey='chooseExchanges' />
 				</p>
 				<i className={cx(styles["close"], "fa fa-times-circle ml-auto")} onClick={onCloseExchanges}></i>
 			</div>

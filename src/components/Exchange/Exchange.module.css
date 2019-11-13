@@ -5,8 +5,9 @@
 	text-align: left;
 
 	.help-icon {
-		color: inherit;
 		position: relative;
+		color: inherit;
+		cursor: pointer;
 	}
 
 	.text-wrap {
@@ -40,6 +41,7 @@
 	.copy-icon {
 		position: relative;
 		margin-left: 10px;
+		cursor: pointer;
 		bottom: 5px;
 	}
 }

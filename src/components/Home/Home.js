@@ -65,7 +65,9 @@ export const Home = () => {
 									placeholder="0.00"
 								/>
 								<hr className={styles["hr-nob"]} align="left" width="15%" />
-								<p className={cx(styles["heading"], "font-weight-light text-left")}>Receive Bitcoin</p>
+								<p className={cx(styles["heading"], "font-weight-light text-left")}>
+									<LocaleString strKey='receiveBitcoin' />
+								</p>
 								<input
 									className={cx(styles["transparent-input"], "form-control f-liber")}
 									type="number"
@@ -74,7 +76,12 @@ export const Home = () => {
 								/>
 							</div>
 							<div className="col-4 text-right flex-column d-flex f-liber p-3vw-xs">
-								<Dropdown list={currencyList} idField='id' valueField='name' />
+								<Dropdown
+									list={currencyList}
+									idField='id'
+									valueField='name'
+									title="Select crypto currency"
+								/>
 								<p className={cx(styles["grey-color"], "font-20 mt-auto font-weight-bold mb-2")}>
 									BTC
 								</p>
@@ -83,17 +90,18 @@ export const Home = () => {
 					</div>
 
 					<div className="col-md-6 p-4 mt-10vh-sm text-left">
-						<h4 className="font-22 f-liber">Recycle your Alt-coins to Bitcoin</h4>
+						<h4 className="font-22 f-liber">
+							<LocaleString strKey='recycleAltCoins' />
+						</h4>
 						<p className="font-12">
-							Exchange 500+ altcoins without creating an account on any
-							exchange.
+							<LocaleString strKey='exchangeFromMultipleExchanges' />
 						</p>
 						<button
 							type="button"
 							className={cx(styles["green-button"], "btn f-avenir")}
 							onClick={handleShowExchanges}
 						>
-							Exchange
+							<LocaleString strKey='exchange' />
 						</button>
 					</div>
 				</div>

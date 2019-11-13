@@ -1,9 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
 
-import Header from 'components/common/Header';
-
 import styles from './TrackOrder.module.css';
+import LocaleString from 'components/common/LocaleString';
 
 export const TrackOrder = () => {
 	return (
@@ -23,7 +22,7 @@ export const TrackOrder = () => {
 					/>
 					<div className="input-group-append">
 						<span className={cx(styles["input-group-text"], "f-liber font-weight-bolder")}>
-							Track Order
+							<LocaleString strKey='trackOrderButton' />
 						</span>
 					</div>
 				</div>

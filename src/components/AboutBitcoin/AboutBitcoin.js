@@ -1,5 +1,6 @@
 import React from 'react';
 
+import LocaleString from 'components/common/LocaleString';
 import greenCloudBitcoin from 'images/green-cloud-btc.svg';
 
 export const AboutBitcoin = () => {
@@ -9,29 +10,20 @@ export const AboutBitcoin = () => {
 				<div className="row">
 					<div className="col-sm-6 my-auto">
 						<h2 className="font-24 f-liber font-weight-bolder">
-							What is Bitcoin?
+							<LocaleString strKey='whatIsBitcoin' />
 						</h2>
 						<p className="font-12">
-							From a white paper, some mathematics and cryptography — an idea
-							was born that was so powerful it ignited a revolution. Bitcoin
-							is a decentralized payment network that enables fast, secure,
-							trustless transactions across the globe using the underlying
-							technology called the Blockchain.
+							<LocaleString strKey='bitcoinDef' />
 						</p>
-						<p className="font-12">A section for description on coinrecycler.</p>
+						<p className="font-12">
+							<LocaleString strKey='coinRecyclerIntro' />
+						</p>
 						<div className="font-12">
-							Start stacking sats. Dump your altcoins for bitcoin and
-							lightning in a simple, fast and secure way without spending any
-							time creating an account on exchanges. We have partnered with
-							some of the largest cryptocurrency exchanges and constantly
-							fetch the best available price that’s available. If you are
-							living on crypto, It’s never been easier to obtain a few
-							satoshis into your Lightning Wallet and pay for that coffee.
+							<LocaleString strKey='bitcoinMoreDef' />
 						</div>
 					</div>
 					<div className="col-sm-6 m-auto text-center p-5">
-						<img src={greenCloudBitcoin} alt="" className="img-fluid w-100 ml-auto"
-						/>
+						<img src={greenCloudBitcoin} alt="" className="img-fluid w-100 ml-auto" />
 					</div>
 				</div>
 			</div>
