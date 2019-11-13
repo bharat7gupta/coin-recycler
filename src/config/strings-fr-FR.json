@@ -24,7 +24,7 @@
     "enterWalletAddressInfo": "Adresse pour le portefeuille dans lequel Bitcoin sera déposé",
     "tncAgreement": "En cliquant sur Suivant, vous acceptez les termes et la politique de confidentialité",
     "next": "prochain",
-    "sendCurrencyToAddress": "Envoyer à l'adresse ci-dessous le @count '@currency'",
+    "sendCurrencyToAddress": "Envoyer à l'adresse ci-dessous le {@count} '{@currency}'",
     "exchangeMessage": "Exchange s'initie automatiquement une fois que le dépôt est détecté sur l'adresse ci-dessous",
     "orderId": "Id de commande",
     "recipientAddress": "Adresse du destinataire (BTC) : ",

@@ -24,7 +24,7 @@
     "enterWalletAddressInfo": "वॉलेट के लिए पता जिसमें बिटकॉइन जमा किया जाएगा",
     "tncAgreement": "अगले क्लिक करके आप नियम और गोपनीयता नीति से सहमत हैं",
     "next": "अगला",
-    "sendCurrencyToAddress": "{@count} {@currency} नीचे दिए गए पते पर भेजें",
+    "sendCurrencyToAddress": "{{@count}} {{@currency}} नीचे दिए गए पते पर भेजें",
     "exchangeMessage": "नीचे पते पर जमा होने के बाद एक्सचेंज स्वचालित रूप से शुरू हो जाएगा",
     "orderId": "आदेश आईडी",
     "recipientAddress": "प्राप्तकर्ता पता (बीटीसी): ",

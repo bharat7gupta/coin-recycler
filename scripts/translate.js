@@ -46,7 +46,7 @@ request(authRequest, (e, r, body) => {
 				let translation = {};
 
 				keys.reduce((translation, key, currentIndex) => {
-					translation[key] = translationArray[currentIndex];
+					translation[key] = translationArray[currentIndex].replace(/@([a-zA-Z]+)/g, '{@$1}');
 					return translation;
 				}, translation);
 
