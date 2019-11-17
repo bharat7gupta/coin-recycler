@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'whatwg-fetch';
 import './index.css';
 // import './css/fontawesome-5.11.2/all.min.css';
 import App from './App';

@@ -11,6 +11,7 @@
 	"exchangeFromMultipleExchanges": "Exchange 500+ altcoins without creating an account on any exchange.",
 	"exchange": "Exchange",
 	"trackOrder": "Track order",
+	"invalidAmountEntered": "Please enter valid amount",
 
 	"chooseExchanges": "Choose Exchanges",
 	"dontMindWaiting": "Don’t mind waiting little get the",
@@ -31,7 +32,7 @@
 	"sendCurrencyToAddress": "Send {@count} {@currency} to the address below",
 	"exchangeMessage": "Exchange will automatically initiate once deposit is detected on below address",
 	"orderId": "Order Id",
-	"recipientAddress": "Recipient Address (BTC): ",
+	"recipientAddress": "Recipient Address (BTC)",
 
 	"orderPlaced": "Order Placed",
 	"orderReceived": "Order recieved",
@@ -62,5 +63,7 @@
 	"missionLine1": "The cryptocurrency industry is the most revolutionary creation of this generation. However, this market is flooded with many tokens that aim to do promising things but fail. You might hold bags of such tokens and can’t really trade. We have enabled a platform where you can recycle all these altcoin bags for bitcoin, the truly proven cryptocurrency today that has been the longest in the space and has only gotten stronger. Bitcoin coupled with Lightning Network provides an applicable solution to the long-lasting debate of scaling.",
 	"missionLine2": "We do not incline ourselves towards any sort of crypto maximalism. The crypto space is huge with multiple blockchains providing specific use-cases that aim to influence the way we interact in our daily lives. Ethereum is another revolutionary crypto technology that will change the way software is made and used, but we will list it as a base pair once the largest DAPP on it is NOT cryptokitties.",
 
-	"trackOrderButton": "Track Order"
+	"trackOrderButton": "Track Order",
+
+	"copiedToClipboard": "Address has been copied to clipboard"
 }

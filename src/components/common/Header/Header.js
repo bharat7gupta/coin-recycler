@@ -6,6 +6,7 @@ import Dropdown from 'components/common/Dropdown';
 import LocaleString from 'components/common/LocaleString';
 import supportedLanguages from 'config/supported-languages.json';
 import UserContext from 'UserContext';
+import { setItemToStorage } from 'utils';
 
 import styles from './Header.module.css';
 
@@ -17,7 +18,7 @@ export const Header = () => {
 	const context = useContext(UserContext);
 
 	const handleLanguageChange = (languageCode) => {
-		window.localStorage.setItem("currentLanguage", languageCode);
+		setItemToStorage("currentLanguage", languageCode);
 		setCurrentLanguage(languageCode);
 		context.updateCurrentLanguage(languageCode);
 	};

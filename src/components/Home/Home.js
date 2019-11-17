@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
 
@@ -6,35 +6,60 @@ import greenRoller from 'images/green-roller.svg';
 import Dropdown from 'components/common/Dropdown';
 import LocaleString from 'components/common/LocaleString';
 import CoinExchanges from 'components/CoinExchanges';
+import { setItemToStorage } from 'utils';
+import { showErrorToast } from 'Toast';
+
+import { getAllTokens } from "api/ApiCaller";
 
 import styles from './Home.module.css';
 
 export const Home = () => {
-	const currencyList = [
-		{
-			id: 'ETH',
-			name: 'ETH'
-		},
-		{
-			id: 'RAV',
-			name: 'RAV'
-		},
-		{
-			id: 'BCC',
-			name: 'BCC'
-		},
-	];
+	// tokens list state and effects
+	const [tokens, setTokens] = useState([]);
+	const [selectedCurrency, setSelectedCurrency] = useState(null);
+	const [amount, setAmount] = useState('0.00');
 
+	// show exchanges list state and effects
 	const [ showExchanges, setShowExchanges ] = useState(false);
 	const [ addExchangesSlideInClass, setAddExchangesSlideInClass ] = useState(false);
 
+	useEffect(() => {
+		getAllTokens()
+			.then(response => {
+				const tokens = response.result;
+				setTokens(tokens);
+				setSelectedCurrency(tokens[0].Symbol);
+			});
+	}, []);
+
+	const handleTokenChange = (token) => {
+		setSelectedCurrency(token);
+	};
+	
+	const handleAmountChange = e => {
+		setAmount(e.target.value);
+	};
+
 	const handleShowExchanges = () => {
+		const parsedAmount = parseFloat(amount);
+
+		if (isNaN(parsedAmount) || parsedAmount === 0) {
+			showErrorToast('invalidAmountEntered');
+			return;
+		}
+
 		setShowExchanges(true);
 
 		setTimeout(() => {
 			setAddExchangesSlideInClass(true);
 		}, 100);
 	};
+
+	const onExchangeSelection = (exchange) => {
+		setItemToStorage("amount", amount);
+		setItemToStorage("fromCurrency", selectedCurrency);
+		setItemToStorage("exchange", exchange.name);
+	}
 
 	const onCloseExchanges = () => {
 		setAddExchangesSlideInClass(false);
@@ -63,6 +88,8 @@ export const Home = () => {
 									className={cx(styles["transparent-input"], "form-control f-liber")}
 									type="number"
 									placeholder="0.00"
+									value={amount}
+									onChange={handleAmountChange}
 								/>
 								<hr className={styles["hr-nob"]} align="left" width="15%" />
 								<p className={cx(styles["heading"], "font-weight-light text-left")}>
@@ -77,10 +104,13 @@ export const Home = () => {
 							</div>
 							<div className="col-4 text-right flex-column d-flex f-liber p-3vw-xs">
 								<Dropdown
-									list={currencyList}
-									idField='id'
-									valueField='name'
+									list={tokens}
+									selectedValue={selectedCurrency}
+									idField='Symbol'
+									valueField='Name'
 									title="Select crypto currency"
+									onChange={handleTokenChange}
+									direction='rtl'
 								/>
 								<p className={cx(styles["grey-color"], "font-20 mt-auto font-weight-bold mb-2")}>
 									BTC
@@ -119,8 +149,10 @@ export const Home = () => {
 
 			{showExchanges && (
 				<CoinExchanges
+					primaryCurrency={selectedCurrency}
 					addSlideInClass={addExchangesSlideInClass}
 					onCloseExchanges={onCloseExchanges}
+					onExchangeSelection={onExchangeSelection}
 				/>
 			)}
 		</React.Fragment>

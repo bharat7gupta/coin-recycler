@@ -10,6 +10,7 @@
     "exchangeFromMultipleExchanges": "Intercambia más de 500 altcoins sin crear una cuenta en ningún intercambio.",
     "exchange": "intercambiar",
     "trackOrder": "Orden de seguimiento",
+    "invalidAmountEntered": "Por favor, introduzca un importe válido",
     "chooseExchanges": "Elija Intercambios",
     "dontMindWaiting": "No te preocupes esperando poco obtener el",
     "bestPrice": "Mejor precio",
@@ -27,7 +28,7 @@
     "sendCurrencyToAddress": "Envía {@count} a la siguiente dirección el número de {@currency} a la dirección que se indica a continuación.",
     "exchangeMessage": "Exchange se iniciará automáticamente una vez que se detecte el depósito en la dirección siguiente",
     "orderId": "Id de pedido",
-    "recipientAddress": "Dirección del destinatario (BTC): ",
+    "recipientAddress": "Dirección del destinatario (BTC)",
     "orderPlaced": "Pedido realizado",
     "orderReceived": "Pedido recibido",
     "orderInProgress": "Su pedido está en proceso",
@@ -52,5 +53,6 @@
     "missionTitle": "Misión",
     "missionLine1": "La industria criptomoneda es la creación más revolucionaria de esta generación. Sin embargo, este mercado está inundado de muchos tokens que tienen como objetivo hacer cosas prometedoras pero fracasan. Usted puede tener bolsas de tales fichas y realmente no puede operar. Hemos habilitado una plataforma donde se pueden reciclar todas estas bolsas altcoin para bitcoin, la criptomoneda verdaderamente probada hoy en día que ha sido la más larga en el espacio y sólo se ha hecho más fuerte. Bitcoin junto con Lightning Network proporciona una solución aplicable al debate de larga duración del escalado.",
     "missionLine2": "No nos inclinamos hacia ningún tipo de maximalismo criptográfico. El espacio criptográfico es enorme con múltiples cadenas de bloques que proporcionan casos de uso específicos que tienen como objetivo influir en la forma en que interactuamos en nuestra vida diaria. Ethereum es otra tecnología criptográfica revolucionaria que cambiará la forma en que se hace y se utiliza el software, pero lo enumeraremos como un par base una vez que el DAPP más grande en él NO es cryptokitties.",
-    "trackOrderButton": "Orden de seguimiento"
+    "trackOrderButton": "Orden de seguimiento",
+    "copiedToClipboard": "La dirección se ha copiado en el portapapeles"
 }

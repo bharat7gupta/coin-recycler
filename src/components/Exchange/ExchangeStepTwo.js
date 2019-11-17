@@ -3,11 +3,18 @@ import cx from 'classnames';
 
 import qrCode from 'images/qr-code.svg';
 import copyIcon from 'images/copy-icon.svg';
+import LocaleString from 'components/common/LocaleString';
+import { copyToClipboard } from 'utils';
+import { showInfoToast } from 'Toast';
 
 import styles from 'components/Exchange/Exchange.module.css';
-import LocaleString from 'components/common/LocaleString';
 
 export const ExchangeStepTwo = ({ goToNext }) => {
+	const handleAddressCopy = e => {
+		copyToClipboard(e.target.value);
+		showInfoToast('copiedToClipboard');
+	};
+
 	return (
 		<div className={cx(styles["green-box"], "p-3vw-xs")}>
 			<p className="text-right d-inline-block float-right">
@@ -29,7 +36,7 @@ export const ExchangeStepTwo = ({ goToNext }) => {
 					0x5937606132bdd16774b4a5bd501746e5dd498bdd
 				</p>
 				<span className="text-center">
-					<img className={styles["copy-icon"]} src={copyIcon} alt=""/>
+					<img className={styles["copy-icon"]} src={copyIcon} alt="" onClick={handleAddressCopy} />
 				</span>
 			</div>
 

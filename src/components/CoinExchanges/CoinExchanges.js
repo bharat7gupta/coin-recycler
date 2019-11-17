@@ -7,21 +7,27 @@ import { getAllExchanges } from "api/ApiCaller";
 import styles from './CoinExchanges.module.css'
 import LocaleString from 'components/common/LocaleString';
 
-export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
+export const CoinExchanges = ({
+	primaryCurrency,
+	addSlideInClass,
+	onCloseExchanges,
+	onExchangeSelection
+}) => {
 	const [exchanges, setExchanges] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const history = useHistory();
 
 	useEffect(() => {
 		setLoading(true);
-		getAllExchanges()
-			.then((data) => {
+		getAllExchanges(primaryCurrency, 1)
+			.then((response) => {
 				setLoading(false);
-				setExchanges(data);
+				setExchanges(response.data.exchanges);
 			});
-	}, []);
+	}, [primaryCurrency]);
 
 	const handleExchangeSelection = (exchange) => {
+		onExchangeSelection(exchange);
 		history.push('/exchange');
 	};
 
@@ -39,7 +45,7 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 
 				{exchanges && exchanges.length > 0 ?
 					exchanges.map((exchange, index) => (
-						<React.Fragment>
+						<div key={exchange.name}>
 							<div className={styles['coin-exchange']} onClick={() => handleExchangeSelection(exchange)}>
 								<div className={cx(styles["price-box-row-1"], "row")}>
 									<div className="col-6 d-flex flex-column align-items-start">
@@ -59,7 +65,8 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 											<LocaleString strKey='amount' />
 										</p>
 										<p className="font-16 font-weight-bold">
-											{exchange.btnAmount}<span className="font-14 ml-2">BTC</span>
+											{exchange.estAmount}
+											<span className="font-14 ml-2">BTC</span>
 										</p>
 									</div>
 									<div className="col-6 text-right">
@@ -76,7 +83,7 @@ export const CoinExchanges = ({ addSlideInClass, onCloseExchanges }) => {
 							{(index !== exchanges.length - 1) &&
 								<hr className="hr-nob short-hr" align="left" width="10%" />}
 
-						</React.Fragment>
+						</div>
 					))
 				: null}
 			</div>

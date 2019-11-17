@@ -11,7 +11,8 @@ export const Dropdown = ({
 	idField,
 	valueField,
 	title,
-	onChange
+	onChange,
+	direction = 'ltr'
 }) => {
 
 	const onSelectionChange = (e) => {
@@ -24,7 +25,7 @@ export const Dropdown = ({
 
 	return (
 		<div className={styles["dropdown"]} title={title}>
-			<select value={selectedValue} className={containerClass} onChange={onSelectionChange}>
+			<select value={selectedValue} className={containerClass} onChange={onSelectionChange} dir={direction}>
 				{list.map(item => (
 					<option key={item[idField]} value={item[idField]}>{item[valueField]}</option>
 				))}

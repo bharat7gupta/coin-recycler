@@ -8,6 +8,7 @@ import { UserProvider } from './UserContext';
 import supportedLanguages from 'config/supported-languages.json';
 
 import AsyncComponent from './AsyncComponent';
+import { setItemToStorage } from 'utils';
 
 import styles from './App.module.css';
 
@@ -26,7 +27,7 @@ function App() {
 
 	if (!languageCode) {
 		languageCode = supportedLanguages[0].code;
-		window.localStorage.setItem('currentLanguage', languageCode);
+		setItemToStorage('currentLanguage', languageCode);
 	}
 
 	// App component state is used as context value

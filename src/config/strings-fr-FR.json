@@ -10,6 +10,7 @@
     "exchangeFromMultipleExchanges": "Échangez plus de 500 altcoins sans créer de compte sur aucun échange.",
     "exchange": "Échange",
     "trackOrder": "Ordre de piste",
+    "invalidAmountEntered": "S'il vous plaît entrer le montant valide",
     "chooseExchanges": "Choisissez des échanges",
     "dontMindWaiting": "Ne me dérange pas d'attendre peu obtenir le",
     "bestPrice": "Meilleur Prix",
@@ -27,7 +28,7 @@
     "sendCurrencyToAddress": "Envoyer à l'adresse ci-dessous le {@count} '{@currency}'",
     "exchangeMessage": "Exchange s'initie automatiquement une fois que le dépôt est détecté sur l'adresse ci-dessous",
     "orderId": "Id de commande",
-    "recipientAddress": "Adresse du destinataire (BTC) : ",
+    "recipientAddress": "Adresse du destinataire (BTC)",
     "orderPlaced": "Commande placée",
     "orderReceived": "Commande reçue",
     "orderInProgress": "Votre commande est en cours",
@@ -52,5 +53,6 @@
     "missionTitle": "Mission",
     "missionLine1": "L'industrie de la crypto-monnaie est la création la plus révolutionnaire de cette génération. Cependant, ce marché est inondé de nombreux jetons qui visent à faire des choses prometteuses, mais échouent. Vous pourriez tenir des sacs de ces jetons et ne peut pas vraiment le commerce. Nous avons activé une plate-forme où vous pouvez recycler tous ces sacs altcoin pour bitcoin, la crypto-monnaie vraiment prouvée aujourd'hui qui a été la plus longue dans l'espace et n'a fait que se renforcer. Bitcoin couplé avec Lightning Network fournit une solution applicable au débat de longue durée de la mise à l'échelle.",
     "missionLine2": "Nous ne nous inclinons pas vers une sorte de crypto-maximalisme. L'espace crypto est énorme avec plusieurs blockchains fournissant des cas d'utilisation spécifiques qui visent à influencer la façon dont nous interagissons dans notre vie quotidienne. Ethereum est une autre technologie crypto révolutionnaire qui va changer la façon dont le logiciel est fabriqué et utilisé, mais nous allons l'énumérer comme une paire de base une fois que le plus grand DAPP sur elle n'est pas cryptokitties.",
-    "trackOrderButton": "Ordre de piste"
+    "trackOrderButton": "Ordre de piste",
+    "copiedToClipboard": "L'adresse a été copiée sur un presse-papiers"
 }

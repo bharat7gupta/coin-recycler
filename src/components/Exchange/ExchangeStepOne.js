@@ -11,7 +11,7 @@ export const ExchangeStepOne = ({ goToNext }) => {
 	let inputRef;
 
 	const [showQRReader, setShowQRReader] = useState(false);
-	const [bitcoinWalletAddress, setBitcoinWalletAddress] = useState('');
+	const [bitcoinWalletAddress, setBitcoinWalletAddress] = useState(window.localStorage.getItem("bitcoinAddress") || '');
 
 	const setInputRef = (element) => {
 		inputRef = element;
@@ -30,7 +30,7 @@ export const ExchangeStepOne = ({ goToNext }) => {
 
 	const goToNextStep = () => {
 		if (!!bitcoinWalletAddress && bitcoinWalletAddress.trim() !== "") {
-			goToNext();
+			goToNext(bitcoinWalletAddress);
 		} else {
 			showErrorToast('emptyBitcoinAddressError');
 		}
@@ -62,8 +62,7 @@ export const ExchangeStepOne = ({ goToNext }) => {
 					ref={setInputRef}
 					type="text"
 					className="form-control d-inline-block"
-					id="bitAccount"
-					placeholder="0123456789abcdef0123456789abcdef"
+					placeholder="1L5wSMgerhHg8GZGcsNmAx5EXMRXSKR3He"
 					value={bitcoinWalletAddress}
 					onChange={handleBitcoinWalletAddressChange}
 				/>

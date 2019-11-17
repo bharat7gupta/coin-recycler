@@ -30,8 +30,8 @@
 	color: #37d6ae;
 	font-size: 20px;
 	position: absolute;
-	top: 5px;
-	right: -8px;
+	top: 6px;
+    right: -10px;
 	pointer-events: none;
 	cursor: pointer;
 }
